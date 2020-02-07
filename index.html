@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <title>الاستمارة الخضراء</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <div>
+    <div class="frame">
+      <div class="frame-content frame-content__fullwidth">
+        <div class="frame-top">
+          <img src="./upper.png" alt="">
+        </div>
+        <div id="main" class="frame-container">
+          <div>
+            <div>
+              <div class="frame-panel">
+                <div class="frame-panel-body">
+                  <h2 class="text-center">
+                    طلب معادلة شهادات المدارس الخاصة داخل الدولة
+                  </h2>
+                  <div class="or">الملاحظات</div>
+                  <div class="frame-header text-right">
+                    لسرعة إنجاز المعاملة يرجى مراعة مايلي :: <br />
+                    .يبرز مقدم ما يثبت شخصيته - <br />
+                    .يتحمل مقدم الطلب مسؤولية صحة البيانات الواردة في الاستمارة - <br />
+                   .تحتفظ الإدارة بحقها في تحويل الشهادات المزورة إلى الجهات الخاصة -<br />
+                    .يتم إرجاع أصول الشهادات إلى صاحب العلاقة بعد تدقيقها - <br />
+                    .يتم تسلم قرار المعادلة خلال أسبوع من تقديم الطلب - <br />
+                    .لا يسترد رسوم إصدار شهادة معادلة - <br />
+                  </div>
+                  <div class="or">البيانات</div>
+                  <form id="form" class="form" action="return false;">
+                    <div class="frame-form text-right">
+                      <div class="form-group has-feedback">
+                        <label for="sname" class="control-label">الاسم كما ورد في الشهادة</label>
+                        <input type="text" lang="ar" required class="form-control" id="sname" name="sname"
+                          autocomplete="off" value=""  data-error=" يرجى كتابت اسم مقدم الطلب الثلاثي" />
+                        <span class="help-block"></span>
+                      </div>
+                      <div class="form-group has-feedback">
+                        <label for="request-date" class="control-label">مسمى الشهادة</label>
+                        <input required type="text" class="form-control" id="student-name" name="student-name"
+                          autocomplete="off" value=""  data-error=" يرجى كتابت اسم الطالب كاملاً" />
+                        <span class="help-block"></span>
+                      </div>
+                      <div class="form-group has-feedback">
+                        <label for="sphone" class="control-label">عدد السنوات في جميع المراحل الدراسية</label>
+                        <select id="select-zone" required name="zone" class="form-control">
+                          <option value="رأس الخيمة">رأس الخيمة</option>
+                          <option value="أم القيوين">أم القيوين</option>
+                          <option value="الفجيرة">الفجيرة</option>
+                          <option value="عجمان">عجمان</option>
+                          <option value="الشارقة">الشارقة</option>
+                          <option value="دبي">دبي</option>
+                          <option value="أبوظبي">أبوظبي</option>
+                          <option value="العين">العين</option>
+                        </select>
+                        <span class="help-block"></span>
+                      </div>
+                      <div class="form-group has-feedback">
+                        <label for="student-name" class="control-label">اسم المدرسة</label>
+                        <input required type="text" class="form-control" id="student-name" name="student-name"
+                          autocomplete="off" value=""  data-error=" يرجى كتابت اسم الطالب كاملاً" />
+                        <span class="help-block"></span>
+                      </div>
+                      <div class="form-group has-feedback">
+                        <label for="student-name" class="control-label">البلد</label>
+                        <select id="select-zone" required name="zone" class="form-control">
+                          <option value="رأس الخيمة">رأس الخيمة</option>
+                          <option value="أم القيوين">أم القيوين</option>
+                          <option value="الفجيرة">الفجيرة</option>
+                          <option value="عجمان">عجمان</option>
+                          <option value="الشارقة">الشارقة</option>
+                          <option value="دبي">دبي</option>
+                          <option value="أبوظبي">أبوظبي</option>
+                          <option value="العين">العين</option>
+                        </select>
+                        <span class="help-block"></span>
+                      </div>
+                      <div class="form-group has-feedback">
+                        <label for="school-name" class="control-label">جنسية الطالب </label>
+                        <select id="select-zone" required name="zone" class="form-control">
+                          <option value="رأس الخيمة">رأس الخيمة</option>
+                          <option value="أم القيوين">أم القيوين</option>
+                          <option value="الفجيرة">الفجيرة</option>
+                          <option value="عجمان">عجمان</option>
+                          <option value="الشارقة">الشارقة</option>
+                          <option value="دبي">دبي</option>
+                          <option value="أبوظبي">أبوظبي</option>
+                          <option value="العين">العين</option>
+                        </select>
+                        <span class="help-block"></span>
+                      </div>
+                      <div class="form-group has-feedback">
+                        <label for="request-date" class="control-label">تاريخ التخرج</label>
+                        <input type="date" required class="form-control" id="request-date" name="request-date"
+                          autocomplete="off" />
+                        <span class="help-block"></span>
+                      </div>
+                      <div class="form-group has-feedback">
+                        <label for="school-name" class="control-label">الجهة الرسمية التي طلبت معدلات الشهادة</label>
+                        <input required type="text" class="form-control" id="school-name" name="school-name"
+                          autocomplete="off" value=""  data-error="يرجى كتابت اسم المدرسة" />
+                        <span class="help-block"></span>
+                      </div>
+                      <div class="form-group has-feedback">
+                        <label for="school-name" class="control-label">العنوان في الإمارات</label>
+                        <input required type="text" class="form-control" id="school-name" name="school-name"
+                          autocomplete="off" value=""  data-error="يرجى كتابت اسم المدرسة" />
+                        <span class="help-block"></span>
+                      </div>
+                      <div class="form-group has-feedback">
+                        <label for="school-name" class="control-label">هاتف متحرك</label>
+                        <input required type="text" class="form-control" id="school-name" name="school-name"
+                          autocomplete="off" value=""  data-error="يرجى كتابت اسم المدرسة" />
+                        <span class="help-block"></span>
+                      </div>
+                      <div class="or">...</div>
+                      <div id="data-section">
+                        <div id="selectors-section" class="form-row">
+                          <div class="form-group col-md-4 has-feedback">
+                            <label for="zone" class="control-label">المنطقة التعلمية</label>
+                            <select id="select-zone" required name="zone" class="form-control">
+                              <option value="رأس الخيمة">رأس الخيمة</option>
+                              <option value="أم القيوين">أم القيوين</option>
+                              <option value="الفجيرة">الفجيرة</option>
+                              <option value="عجمان">عجمان</option>
+                              <option value="الشارقة">الشارقة</option>
+                              <option value="دبي">دبي</option>
+                              <option value="أبوظبي">أبوظبي</option>
+                              <option value="العين">العين</option>
+                            </select>
+                            <span class="help-block"></span>
+                          </div>
+                          <div class="form-group col-md-4 has-feedback">
+                            <label for="class" class="control-label">الصف
+                            </label>
+                            <select id="select-class" required name="class" class="form-control">
+                              <option value="الأول">الأول</option>
+                              <option value="الثاني">الثاني</option>
+                              <option value="الثالث">الثالث</option>
+                              <option value="الرابع">الرابع</option>
+                              <option value="الخامس">الخامس</option>
+                              <option value="السادس">السادس</option>
+                              <option value="السابع">السابع</option>
+                              <option value="الثامن">الثامن</option>
+                              <option value="التاسع">التاسع</option>
+                              <option value="العاشر">العاشر</option>
+                              <option value="الحادي عشر">الحادي عشر</option>
+                              <option value="الثاني عشر">الثاني عشر</option>
+                            </select>
+                            <span class="help-block"></span>
+                          </div>
+                          <div class="form-group col-md-4 has-feedback">
+                            <label for="year" class="control-label">السنة الدراسية</label>
+                            <select id="select-year" required name="year" class="form-control">
+
+                            </select>
+                            <span class="help-block"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <button type="button" id="extra-btn" class="close">
+                          <code>اضافة</code> <span> &#43; </span>
+                        </button>
+                      </div>
+                      <div class="row">
+                        <button type="submit" id="submit-btn" class="btn btn-default">
+                          تسليم
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame-bottom">
+          <img src="./lower.png" alt="">
+        </div>
+        <div id="main2" class="confirm hide">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="smile-beam"
+            class="svg-inline--fa fa-smile-beam fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 496 512">
+            <path fill="currentColor"
+              d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zM112 223.4c3.3-42.1 32.2-71.4 56-71.4s52.7 29.3 56 71.4c.7 8.6-10.8 11.9-14.9 4.5l-9.5-17c-7.7-13.7-19.2-21.6-31.5-21.6s-23.8 7.9-31.5 21.6l-9.5 17c-4.3 7.4-15.8 4-15.1-4.5zm250.8 122.8C334.3 380.4 292.5 400 248 400s-86.3-19.6-114.8-53.8c-13.5-16.3 11-36.7 24.6-20.5 22.4 26.9 55.2 42.2 90.2 42.2s67.8-15.4 90.2-42.2c13.6-16.2 38.1 4.3 24.6 20.5zm6.2-118.3l-9.5-17c-7.7-13.7-19.2-21.6-31.5-21.6s-23.8 7.9-31.5 21.6l-9.5 17c-4.1 7.3-15.6 4-14.9-4.5 3.3-42.1 32.2-71.4 56-71.4s52.7 29.3 56 71.4c.6 8.6-11 11.9-15.1 4.5z">
+            </path>
+          </svg>
+          تم التسليم بنحاح
+        </div>
+        <div id="main4" class="deny hide">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sad-cry"
+            class="svg-inline--fa fa-sad-cry fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 496 512">
+            <path fill="currentColor"
+              d="M248 8C111 8 0 119 0 256c0 90.1 48.2 168.7 120 212.1V288c0-8.8 7.2-16 16-16s16 7.2 16 16v196.7c29.5 12.4 62 19.3 96 19.3s66.5-6.9 96-19.3V288c0-8.8 7.2-16 16-16s16 7.2 16 16v180.1C447.8 424.7 496 346 496 256 496 119 385 8 248 8zm-65.5 216.5c-14.8-13.2-46.2-13.2-61 0L112 233c-3.8 3.3-9.3 4-13.7 1.6-4.4-2.4-6.9-7.4-6.1-12.4 4-25.2 34.2-42.1 59.9-42.1S208 197 212 222.2c.8 5-1.7 10-6.1 12.4-5.8 3.1-11.2.7-13.7-1.6l-9.7-8.5zM248 416c-26.5 0-48-28.7-48-64s21.5-64 48-64 48 28.7 48 64-21.5 64-48 64zm149.8-181.5c-5.8 3.1-11.2.7-13.7-1.6l-9.5-8.5c-14.8-13.2-46.2-13.2-61 0L304 233c-3.8 3.3-9.3 4-13.7 1.6-4.4-2.4-6.9-7.4-6.1-12.4 4-25.2 34.2-42.1 59.9-42.1S400 197 404 222.2c.6 4.9-1.8 9.9-6.2 12.3z">
+            </path>
+          </svg>
+          حدث خطأ يرجى ابلاغ المسؤول
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="overlay">
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="js.js"></script>
+</body>
+
+</html>
