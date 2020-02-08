@@ -29,31 +29,31 @@
                   <div class="or">الملاحظات</div>
                   <div class="frame-header text-right">
                     لسرعة إنجاز المعاملة يرجى مراعة مايلي :: <br />
-                    .يبرز مقدم ما يثبت شخصيته - <br />
+                    .يبرز مقدم الطلب ما يثبت شخصيته - <br />
                     .يتحمل مقدم الطلب مسؤولية صحة البيانات الواردة في الاستمارة - <br />
                    .تحتفظ الإدارة بحقها في تحويل الشهادات المزورة إلى الجهات الخاصة -<br />
                     .يتم إرجاع أصول الشهادات إلى صاحب العلاقة بعد تدقيقها - <br />
-                    .يتم تسلم قرار المعادلة خلال أسبوع من تقديم الطلب - <br />
-                    .لا يسترد رسوم إصدار شهادة معادلة - <br />
+                    .يتم تسلم قرار المعادلة خلال خمس أيام عمل من تاريخ تقديم الطلب - <br />
+                    .لا تسترد رسوم إصدار شهادة المعادلة - <br />
                   </div>
                   <div class="or">البيانات</div>
                   <form id="form" class="form" action="return false;">
                     <div class="frame-form text-right">
                       <div class="form-group has-feedback">
-                        <label for="sname" class="control-label">الاسم كما ورد في الشهادة</label>
-                        <input type="text" lang="ar" required class="form-control" id="sname" name="sname"
-                          autocomplete="off" value=""  data-error=" يرجى كتابت اسم مقدم الطلب الثلاثي" />
+                        <label for="student-name" class="control-label">الاسم كما ورد في الشهادة</label>
+                        <input type="text" lang="ar" required class="form-control" id="student-name" name="student-name"
+                          autocomplete="off" value=""  data-error=" يرجى كتابت الاسم" />
                         <span class="help-block"></span>
                       </div>
                       <div class="form-group has-feedback">
-                        <label for="request-date" class="control-label">مسمى الشهادة</label>
-                        <input required type="text" class="form-control" id="student-name" name="student-name"
-                          autocomplete="off" value=""  data-error=" يرجى كتابت اسم الطالب كاملاً" />
+                        <label for="certificate-name" class="control-label">مسمى الشهادة</label>
+                        <input required type="text" class="form-control" id="certificate-name" name="certificate-name"
+                          autocomplete="off" value=""  data-error=" يرجى كتابت مسمى الشهادة" />
                         <span class="help-block"></span>
                       </div>
                       <div class="form-group has-feedback">
-                        <label for="sphone" class="control-label">عدد السنوات في جميع المراحل الدراسية</label>
-                        <select id="select-zone" required name="zone" class="form-control">
+                        <label for="years-number" class="control-label">عدد السنوات في جميع المراحل الدراسية</label>
+                        <select id="years-number" required name="zone" class="form-control">
                           <option value="سنة">1</option>
                           <option value="سنتان">2</option>
                           <option value="ثلاث سنوات">3</option>
@@ -76,15 +76,15 @@
                         <span class="help-block"></span>
                       </div>
                       <div class="form-group has-feedback">
-                        <label for="student-name" class="control-label">اسم المدرسة</label>
-                        <input required type="text" class="form-control" id="student-name" name="student-name"
-                          autocomplete="off" value=""  data-error=" يرجى كتابت اسم الطالب كاملاً" />
+                        <label for="school-name" class="control-label">اسم المدرسة</label>
+                        <input required type="text" class="form-control" id="school-name" name="school-name"
+                          autocomplete="off" value=""  data-error=" يرجى كتابت اسم المدرسة كاملاً" />
                         <span class="help-block"></span>
                       </div>
                       <div class="form-group has-feedback">
-                        <label for="student-name" class="control-label">البلد</label>
-                        <select id="select-zone" required name="zone" class="form-control">
-                            <option value="" disabled selected>إختر</option>
+                        <label for="country-name" class="control-label">البلد</label>
+                        <select id="country-name" required name="zone" class="form-control">
+                            <option value="" disabled selected>اختر</option>
                             <option value="أفغانستان">أفغانستان</option>
                             <option value="ألبانيا">ألبانيا</option>
                             <option value="الجزائر">الجزائر</option>
@@ -284,9 +284,9 @@
                       </div>
                       <div class="or">,,,</div>
                       <div class="form-group has-feedback">
-                        <label for="school-name" class="control-label">جنسية الطالب </label>
-                        <select id="select-zone" required name="zone" class="form-control">
-                          <option value="" disabled selected>إختر</option>
+                        <label for="student-nationality" class="control-label">جنسية الطالب </label>
+                        <select id="student-nationality" required name="zone" class="form-control">
+                          <option value="" disabled selected>اختر</option>
                           <option value="أفغانستان">أفغانستان</option>
                           <option value="ألبانيا">ألبانيا</option>
                           <option value="الجزائر">الجزائر</option>
@@ -485,28 +485,28 @@
                         <span class="help-block"></span>
                       </div>
                       <div class="form-group has-feedback">
-                        <label for="request-date" class="control-label">تاريخ التخرج</label>
-                        <input type="date" required class="form-control" id="request-date" name="request-date"
-                          autocomplete="off" />
+                        <label for="ending-date" class="control-label">تاريخ التخرج</label>
+                        <input type="date" required class="form-control" id="ending-date" name="ending-date"
+                          autocomplete="off" style="text-align:right" data-error="يرجى اختيار التاريخ"/>
                         <span class="help-block"></span>
                       </div>
                       <div class="or">,,,</div>
                       <div class="form-group has-feedback">
-                        <label for="school-name" class="control-label">الجهة الرسمية التي طلبت معدلات الشهادة</label>
-                        <input required type="text" class="form-control" id="school-name" name="school-name"
-                          autocomplete="off" value=""  data-error="يرجى كتابت اسم المدرسة" />
+                        <label for="organization-name" class="control-label">الجهة الرسمية التي طلبت معادلة الشهادة</label>
+                        <input required type="text" class="form-control" id="organization-name" name="organization-name"
+                          autocomplete="off" value=""  data-error="يرجى كتابت اسم الجهة" />
                         <span class="help-block"></span>
                       </div>
                       <div class="form-group has-feedback">
-                        <label for="school-name" class="control-label">العنوان في الإمارات</label>
-                        <input required type="text" class="form-control" id="school-name" name="school-name"
-                          autocomplete="off" value=""  data-error="يرجى كتابت اسم المدرسة" />
+                        <label for="address" class="control-label">العنوان في الإمارات</label>
+                        <input required type="text" class="form-control" id="address" name="address"
+                          autocomplete="off" value=""  data-error="يرجى كتابت العنوان" />
                         <span class="help-block"></span>
                       </div>
                       <div class="form-group has-feedback">
-                        <label for="school-name" class="control-label">الهاتف متحرك</label>
-                        <input required type="text" class="form-control" id="school-name" name="school-name"
-                          autocomplete="off" value=""  data-error="يرجى كتابت اسم المدرسة" />
+                        <label for="phone" class="control-label">الهاتف المتحرك</label>
+                        <input required type="text" class="form-control" id="phone" name="phone"
+                          autocomplete="off" value=""  data-error="يرجى كتابت رقم الهاتف" />
                         <span class="help-block"></span>
                       </div>
                       <div class="or">...</div>
