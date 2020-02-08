@@ -1,19 +1,3 @@
-document.getElementById("extra-btn").addEventListener("click", function () {
-  var node = document.createElement("div");
-  var clone = document.getElementById("selectors-section").cloneNode(true);
-  node.appendChild(clone);
-  document.getElementById("data-section").appendChild(node);
-});
-
-document.getElementById("request-date").value = TodayDate();
-var selectYear = document.getElementById("select-year");
-var d = new Date();
-var n = d.getFullYear();
-for (let index = n; index >= 1950; index--) {
-  var option = document.createElement("option");
-  option.text = index;
-  selectYear.add(option);
-}
 $("input").prop('required', true);
 $(function () {
   var inputs = document.getElementsByTagName("INPUT");
@@ -26,51 +10,27 @@ $(function () {
     };
   }
 });
-// $(document).ready(function () {
-//   $("form").change(function () {
-//     console.log(
-//       $(this)
-//       .closest("form")
-//       .serialize()
-//     );
-//   });
-// });
-
 document.getElementById("form").onsubmit = function (e) {
   e.preventDefault();
-  let list = [];
-  let br = 0;
-  $("select").each(function () {
-    if (br == 3) {
-      list.push("<br>");
-      br = 0;
-    }
-    if (br == 0) {
-      list.push("المنطقة: ");
-      list.push(' ' + $(this).val() + ',')
-    } else if (br == 1) {
-      list.push("الصف: ");
-      list.push(' ' + $(this).val() + ',')
-    } else if (br == 2) {
-      list.push("السنة: ");
-      list.push(' ' + $(this).val() + '.')
-    }
-    list.push("&nbsp;");
-    br++;
-  })
-  console.log(list.join(""))
-  var body = `<h2 style="text-align:center;">استمارة طالب</h2>
+  var body = `<h2 style="text-align:center;">استمارة معادلة شهادة</h2>
   <p style="font-size:20px; font-weight:500; letter-spacing: 1px;">
-  المقدم: ${$("#sname").val()}` + '<br>' + `التاريخ: ${TodayDate()}` +
-    '<br>' + `الهاتف: ${$("#sphone").val()}` + '<br>' + `الطالب: ${$("#student-name").val()}` +
-    '<br>' + `المدرسة: ${$("#school-name").val()}` +
-    '<br>' + `${list.join("")}
-  </p>`;
+  الاسم كما ورد في الشهادة: ${$("#student-name").val()}` +
+    '<br>' + `مسمى الشهادة: ${$("#certificate-name").val()}` +
+    '<br>' + `عدد السنوات في جميع المراحل الدراسية: ${$("#years-number").val()}` +
+    '<br>' + `اسم المدرسة: ${$("#school-name").val()}` +
+    '<br>' + `البلد: ${$("#country-name").val()}` +
+    '<br>' + `جنسية الطالب: ${$("#student-nationality").val()}` +
+    '<br>' + `تاريخ التخرج: ${$("#ending-date").val()}` +
+    '<br>' + `الجهة الرسمية التي طلبت معدلات الشهادة: ${$("#organization-name").val()}` +
+    '<br>' + `العنوان في الإمارات: ${$("#address").val()}` +
+    '<br>' + `الهاتف متحرك: ${$("#phone").val()}` +
+    '<br>' + 
+    `</p>`;
   Email.send({
     SecureToken: "375103b8-b11b-4107-b24e-5f89797e1850",
     To: "chcrak@gmail.com",
     From: "chcrak@gmail.com",
-    Subject: `طلب التسلسل الدراسي لـ: ${$("#student-name").val()}`,
+    Subject: `طلب طلب معادلة شهادة لـ: ${$("#student-name").val()}`,
     Body: `<div style="letter-spacing: 1px;
     border-right: 6px solid #323130;
     background-color:rgba(0, 0, 0, 0.01);
