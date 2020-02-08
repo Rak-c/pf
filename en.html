@@ -6,6 +6,7 @@
   <title>الاستمارة الخضراء</title>
 
   <link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css" href="style.css" />
@@ -17,42 +18,41 @@
       <div class="frame-content frame-content__fullwidth">
         <div class="frame-top">
           <img src="./upper.png" alt="">
+          <a href="./index.html">عربي</a>
         </div>
         <div id="main" class="frame-container">
           <div>
             <div>
               <div class="frame-panel">
                 <div class="frame-panel-body">
-                  <h2 class="text-center">
-                    طلب معادلة شهادات المدارس الخاصة داخل الدولة
+                  <h2 class="text-center" style="font-size: 22pt;">
+                    Request for Equivalence of Private School Certificates Within the Country
                   </h2>
-                  <div class="or">الملاحظات</div>
-                  <div class="frame-header text-right">
-                    لسرعة إنجاز المعاملة يرجى مراعة مايلي :: <br />
-                    .يبرز مقدم الطلب ما يثبت شخصيته - <br />
-                    .يتحمل مقدم الطلب مسؤولية صحة البيانات الواردة في الاستمارة - <br />
-                   .تحتفظ الإدارة بحقها في تحويل الشهادات المزورة إلى الجهات الخاصة -<br />
-                    .يتم إرجاع أصول الشهادات إلى صاحب العلاقة بعد تدقيقها - <br />
-                    .يتم تسلم قرار المعادلة خلال خمس أيام عمل من تاريخ تقديم الطلب - <br />
-                    .لا تسترد رسوم إصدار شهادة المعادلة - <br />
+                  <div class="or" style="font-size: 15pt;">N.B</div>
+                  <div class="frame-header text-left">
+                     - The applicant should have an offical Identifcation. <br />
+                     - The applicant is responsible for the accuracy of the data in this form.<br />
+                     - The administration has the right to send false certificates to the concerned authorities.<br />
+                     - The original certificates will be handed back within a 5 days. <br />
+                     - Fees of iussing an equivalence certificate not refundable. <br />
                   </div>
-                  <div class="or">البيانات</div>
+                  <div class="or" style="font-size: 15pt;">Information</div>
                   <form id="form" class="form" action="return false;">
-                    <div class="frame-form text-right">
+                    <div class="frame-form text-left">
                       <div class="form-group has-feedback">
-                        <label for="student-name" class="control-label">الاسم كما ورد في الشهادة</label>
+                        <label for="student-name" class="control-label">Student's Name (as in Certificate)</label>
                         <input type="text" lang="ar" required class="form-control" id="student-name" name="student-name"
                           autocomplete="off" value=""  data-error=" يرجى كتابت الاسم" />
                         <span class="help-block"></span>
                       </div>
                       <div class="form-group has-feedback">
-                        <label for="certificate-name" class="control-label">مسمى الشهادة</label>
+                        <label for="certificate-name" class="control-label"> Certificate's Name </label>
                         <input required type="text" class="form-control" id="certificate-name" name="certificate-name"
                           autocomplete="off" value=""  data-error=" يرجى كتابت مسمى الشهادة" />
                         <span class="help-block"></span>
                       </div>
                       <div class="form-group has-feedback">
-                        <label for="years-number" class="control-label">عدد السنوات في جميع المراحل الدراسية</label>
+                        <label for="years-number" class="control-label">Total Certificate's Level (Grade)</label>
                         <select id="years-number" required name="zone" class="form-control">
                           <option value="سنة">1</option>
                           <option value="سنتان">2</option>
@@ -76,15 +76,15 @@
                         <span class="help-block"></span>
                       </div>
                       <div class="form-group has-feedback">
-                        <label for="school-name" class="control-label">اسم المدرسة</label>
+                        <label for="school-name" class="control-label">School's Name</label>
                         <input required type="text" class="form-control" id="school-name" name="school-name"
                           autocomplete="off" value=""  data-error=" يرجى كتابت اسم المدرسة كاملاً" />
                         <span class="help-block"></span>
                       </div>
                       <div class="form-group has-feedback">
-                        <label for="country-name" class="control-label">البلد</label>
-                        <select id="country-name" required name="zone" class="form-control">
-                            <option value="" disabled selected>اختر</option>
+                        <label for="country-name" class="control-label">Country</label>
+                        <select id="country-name" required name="country-name" class="form-control">
+                            <option value="" disabled selected>Select</option>
                             <option value="أفغانستان">أفغانستان</option>
                             <option value="ألبانيا">ألبانيا</option>
                             <option value="الجزائر">الجزائر</option>
@@ -284,9 +284,9 @@
                       </div>
                       <div class="or">,,,</div>
                       <div class="form-group has-feedback">
-                        <label for="student-nationality" class="control-label">جنسية الطالب </label>
-                        <select id="student-nationality" required name="zone" class="form-control">
-                          <option value="" disabled selected>اختر</option>
+                        <label for="student-nationality" class="control-label">Student's Nationality</label>
+                        <select id="student-nationality" required name="student-nationality" class="form-control">
+                          <option value="" disabled selected>Select</option>
                           <option value="أفغانستان">أفغانستان</option>
                           <option value="ألبانيا">ألبانيا</option>
                           <option value="الجزائر">الجزائر</option>
@@ -485,26 +485,26 @@
                         <span class="help-block"></span>
                       </div>
                       <div class="form-group has-feedback">
-                        <label for="ending-date" class="control-label">تاريخ التخرج</label>
+                        <label for="ending-date" class="control-label">Year of Graduation</label>
                         <input type="date" required class="form-control" id="ending-date" name="ending-date"
                           autocomplete="off" style="text-align:right" data-error="يرجى اختيار التاريخ"/>
                         <span class="help-block"></span>
                       </div>
                       <div class="or">,,,</div>
                       <div class="form-group has-feedback">
-                        <label for="organization-name" class="control-label">الجهة الرسمية التي طلبت معادلة الشهادة</label>
+                        <label for="organization-name" class="control-label">Equivalence authorizing for</label>
                         <input required type="text" class="form-control" id="organization-name" name="organization-name"
                           autocomplete="off" value=""  data-error="يرجى كتابت اسم الجهة" />
                         <span class="help-block"></span>
                       </div>
                       <div class="form-group has-feedback">
-                        <label for="address" class="control-label">العنوان في الإمارات</label>
+                        <label for="address" class="control-label">Address in UAE</label>
                         <input required type="text" class="form-control" id="address" name="address"
                           autocomplete="off" value=""  data-error="يرجى كتابت العنوان" />
                         <span class="help-block"></span>
                       </div>
                       <div class="form-group has-feedback">
-                        <label for="phone" class="control-label">الهاتف المتحرك</label>
+                        <label for="phone" class="control-label">Mobile Number</label>
                         <input required type="text" class="form-control" id="phone" name="phone"
                           autocomplete="off" value=""  data-error="يرجى كتابت رقم الهاتف" />
                         <span class="help-block"></span>
