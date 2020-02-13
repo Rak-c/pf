@@ -223,7 +223,9 @@ input[type="text"]:disabled {
   color: #fff;
   background: #ba9a3a;
 }
-
+.en {
+  direction: ltr !important;
+}
 code {
   color: black !important;
 }
