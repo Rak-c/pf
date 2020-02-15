@@ -30,7 +30,7 @@ document.getElementById("form").onsubmit = function (e) {
     SecureToken: "375103b8-b11b-4107-b24e-5f89797e1850",
     To: "chcrak@gmail.com",
     From: "chcrak@gmail.com",
-    Subject: `طلب طلب معادلة شهادة لـ: ${$("#student-name").val()}`,
+    Subject: ` طلب معادلة شهادة لـ: ${$("#student-name").val()}`,
     Body: `<div style="letter-spacing: 1px;
     border-right: 6px solid #323130;
     background-color:rgba(0, 0, 0, 0.01);
